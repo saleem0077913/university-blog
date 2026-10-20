@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University of Layyah | Student Blog</title>
+  <meta name="description" content="University of Layyah inspired student blog, campus stories and academic information.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <span>Katchehry Road, Layyah, Punjab, Pakistan</span>
+    <a href="https://ul.edu.pk/" target="_blank" rel="noopener">Official Website ↗</a>
+  </div>
+
+  <header class="header">
+    <div class="logo-area">
+      <a class="logo-link"
+         href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+official+logo"
+         target="_blank" rel="noopener"
+         title="Find University of Layyah logo on Google Images">
+        <img class="logo-img"
+             src="https://ul.edu.pk/favicon.ico"
+             alt="University website logo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <span class="logo-fallback">UL</span>
+      </a>
+
+      <div>
+        <p class="small-title">STUDENT BLOG & CAMPUS STORIES</p>
+        <h1>UNIVERSITY OF LAYYAH</h1>
+        <p class="tagline">Knowledge • Innovation • Excellence</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <button id="menuToggle" aria-expanded="false" aria-controls="navLinks">
+      ☰ Menu
+    </button>
+    <div id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#news">Top Stories</a>
+      <a href="#faculties">Faculties</a>
+      <a href="#gallery">Photo Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="disclaimer">
+    Independent student project — not an official university publication.
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="gold-label">WELCOME TO LAYYAH</p>
+        <h2>A Place of Innovation, Growth & Excellence</h2>
+        <p>
+          Explore university-related stories, academic opportunities,
+          technology, campus life and student learning.
+        </p>
+        <a class="button gold-button" href="#news">Explore Stories →</a>
+        <a class="button outline-button" href="https://ul.edu.pk/"
+           target="_blank" rel="noopener">Official University ↗</a>
+      </div>
+      <div class="hero-seal">
+        <span>UL</span>
+        <small>LEARN · LEAD · GROW</small>
+        <a href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+campus"
+           target="_blank" rel="noopener">Find Campus Photos ↗</a>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <a href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+official+logo"
+         target="_blank" rel="noopener">🎓 <strong>University Logo</strong></a>
+      <a href="https://ul.edu.pk/" target="_blank" rel="noopener">🏛️ <strong>Official Website</strong></a>
+      <a href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+computer+lab"
+         target="_blank" rel="noopener">💻 <strong>Computer Labs</strong></a>
+      <a href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+campus+events"
+         target="_blank" rel="noopener">📸 <strong>Campus Photos</strong></a>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading">
+        <p class="gold-label">UNIVERSITY UPDATES</p>
+        <h2>Top Stories & Articles</h2>
+        <p>Search stories or filter them by category.</p>
+      </div>
+
+      <div class="filters">
+        <input type="search" id="searchInput" placeholder="Search articles...">
+        <select id="categoryFilter">
+          <option value="All">All Categories</option>
+          <option value="University News">University News</option>
+          <option value="Education">Education</option>
+          <option value="Technology">Technology</option>
+          <option value="Student Life">Student Life</option>
+        </select>
+      </div>
+
+      <p id="resultCount"></p>
+      <div class="story-grid" id="storyGrid"></div>
+      <p id="emptyMessage" hidden>No matching stories found.</p>
+    </section>
+
+    <section class="section pale-section" id="faculties">
+      <div class="section-heading">
+        <p class="gold-label">ACADEMIC EXCELLENCE</p>
+        <h2>Our Faculties</h2>
+        <p>Explore academic disciplines associated with the university.</p>
+      </div>
+
+      <div class="faculty-grid">
+        <a class="faculty-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+Faculty+of+Computing+Engineering"
+           target="_blank" rel="noopener">
+          <span>💻</span>
+          <h3>Computing & Engineering</h3>
+          <p>Computer science, information technology and engineering.</p>
+          <small>Find Photos on Google ↗</small>
+        </a>
+
+        <a class="faculty-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+Faculty+of+Natural+Sciences"
+           target="_blank" rel="noopener">
+          <span>🔬</span>
+          <h3>Natural Sciences</h3>
+          <p>Scientific study, research and laboratory learning.</p>
+          <small>Find Photos on Google ↗</small>
+        </a>
+
+        <a class="faculty-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+Faculty+of+Agricultural+Sciences"
+           target="_blank" rel="noopener">
+          <span>🌿</span>
+          <h3>Agricultural Sciences & Technology</h3>
+          <p>Agricultural education and related disciplines.</p>
+          <small>Find Photos on Google ↗</small>
+        </a>
+
+        <a class="faculty-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+Faculty+of+Veterinary+Animal+Sciences"
+           target="_blank" rel="noopener">
+          <span>🐄</span>
+          <h3>Veterinary & Animal Sciences</h3>
+          <p>Animal health and veterinary education.</p>
+          <small>Find Photos on Google ↗</small>
+        </a>
+
+        <a class="faculty-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+Faculty+Management+Humanities+Social+Sciences"
+           target="_blank" rel="noopener">
+          <span>📚</span>
+          <h3>Management, Humanities & Social Sciences</h3>
+          <p>Management, social studies and humanities.</p>
+          <small>Find Photos on Google ↗</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <p class="gold-label">CAMPUS IN PICTURES</p>
+        <h2>University Photo Gallery</h2>
+        <p>Open Google Images to find photos of the actual university.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <a class="gallery-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+main+campus+building"
+           target="_blank" rel="noopener">
+          <img src="https://ul.edu.pk/storage/career/assets/uploads/Gemini_Generated_Image_6n0ejw6n0ejw6n0e.jpg"
+               alt="University campus building"
+               onerror="this.style.display='none'">
+          <span>🏛️ Campus Building <small>Open Google Images ↗</small></span>
+        </a>
+
+        <a class="gallery-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+MOU+UET+Lahore"
+           target="_blank" rel="noopener">
+          <img src="https://ul.edu.pk/storage/career/files/mou2-39f6f.jpeg"
+               alt="University news and MOU"
+               onerror="this.style.display='none'">
+          <span>🤝 University News <small>Open Google Images ↗</small></span>
+        </a>
+
+        <a class="gallery-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+computer+science+laboratory"
+           target="_blank" rel="noopener">
+          <div class="gallery-placeholder">💻</div>
+          <span>Computer Laboratories <small>Open Google Images ↗</small></span>
+        </a>
+
+        <a class="gallery-card"
+           href="https://www.google.com/search?tbm=isch&q=University+of+Layyah+student+events"
+           target="_blank" rel="noopener">
+          <div class="gallery-placeholder">🎓</div>
+          <span>Student Activities <small>Open Google Images ↗</small></span>
+        </a>
+      </div>
+
+      <p class="note">
+        Google Images links open search results; images shown here are not
+        guaranteed to be official. Verify photos before using them.
+      </p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="gold-label">ABOUT THIS PROJECT</p>
+        <h2>Connecting Students with Knowledge</h2>
+        <p>
+          This website is a student-created Web Technology project
+          built with HTML, CSS and JavaScript. It is inspired by the
+          University of Layyah website and is not an official university site.
+        </p>
+        <a class="button gold-button" href="https://ul.edu.pk/"
+           target="_blank" rel="noopener">Visit Official Website ↗</a>
+      </div>
+      <div class="about-box">
+        <span>UL</span>
+        <p>UNIVERSITY OF LAYYAH</p>
+        <small>LAYYAH · PUNJAB · PAKISTAN</small>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="gold-label">CONTACT</p>
+        <h2>Share Your Feedback</h2>
+        <p>This demonstration form does not send messages to a server.</p>
+      </div>
+
+      <form id="contactForm">
+        <label for="visitorName">Your Name</label>
+        <input id="visitorName" required maxlength="80">
+
+        <label for="visitorEmail">Email Address</label>
+        <input id="visitorEmail" type="email" required maxlength="150">
+
+        <label for="visitorMessage">Your Message</label>
+        <textarea id="visitorMessage" rows="4" required maxlength="1000"></textarea>
+
+        <button class="button green-button" type="submit">Submit Feedback</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>UNIVERSITY OF LAYYAH BLOG</strong>
+      <p>Independent Student Project · Web Technology</p>
+    </div>
+    <a href="#home">Back to Top ↑</a>
+    <p>© <span id="year"></span> Student Blog</p>
+  </footer>
+
+</body>
+</html>
